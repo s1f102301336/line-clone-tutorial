@@ -15,8 +15,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-const db = getFirestore(app);
+const db = getFirestore(app); //database情報
 
 const auth = getAuth(app); //人を認証する情報を扱えるようにする
+//今の認証状態
 
 export { db, auth };
